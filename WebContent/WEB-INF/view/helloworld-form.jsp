@@ -3,7 +3,7 @@
 
 <body>
 
-<form action="shoutName" method="Get">
+<form action="shoutName1" method="Get">
 
 <input type="text" name="studentName"
 	placeholder="What's your name"/>
