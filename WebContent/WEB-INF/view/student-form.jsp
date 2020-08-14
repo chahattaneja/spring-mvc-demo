@@ -10,8 +10,17 @@
 		<br><br>
 		Last Name : <form:input path="lastName"/>
 		<br><br>
+		Country :
+		<form:select path="country">
+			<form:options items="${ countryOptions }"/>
+		</form:select>
+		<br><br>
+
+		Favourite Language <form:radiobuttons path="favouriteLanguage" items="${ languageOptions }" />
+		
+		<br><br>
 		<input type="submit" value="submit"/>
-	
+		<br><br>	
 	</form:form>
 
 </body>

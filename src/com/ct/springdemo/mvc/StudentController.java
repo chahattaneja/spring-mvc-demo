@@ -1,5 +1,7 @@
 package com.ct.springdemo.mvc;
 
+import java.util.Arrays;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -11,9 +13,11 @@ public class StudentController {
 	
 	@RequestMapping("/showForm")
 	public String showForm(Model model) {
-		
 		Student student = new Student();
-		model.addAttribute("student",student);
+		
+		model.addAttribute("student", student);
+		model.addAttribute("countryOptions", Arrays.asList(Country.values()));	
+		model.addAttribute("languageOptions", Arrays.asList(Language.values()));
 		
 		return "student-form";
 	}
