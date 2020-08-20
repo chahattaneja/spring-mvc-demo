@@ -28,6 +28,11 @@
 	<form:errors path="age" cssClass="error"/>
 	<br><br>
 	
+	Pin Code 
+	<form:input path = "pinCode" />
+	<form:errors path="pinCode" cssClass="error"/>
+	
+	<br><br>
 	<input type="submit" value="Submit">
 	
 </form:form>

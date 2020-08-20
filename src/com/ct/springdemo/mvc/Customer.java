@@ -3,6 +3,7 @@ package com.ct.springdemo.mvc;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class Customer {
@@ -16,6 +17,9 @@ public class Customer {
 	@Min(value=18, message="age must be atleast 18 to register")
 	@Max(value=24, message="age must be less than 24 to register")
 	private int age;
+	
+	@Pattern(regexp = "^[0-9]{6}", message = "exactly 6 digits required")
+	private String pinCode;
 	
 	public String getFirstName() {
 		return firstName;
@@ -34,5 +38,11 @@ public class Customer {
 	}
 	public void setAge(int age) {
 		this.age = age;
+	}
+	public String getPinCode() {
+		return pinCode;
+	}
+	public void setPinCode(String pinCode) {
+		this.pinCode = pinCode;
 	}
 }
