@@ -14,9 +14,10 @@ public class Customer {
 	@Size(min=1, message="is Required")
 	private String lastName;
 	
+	@NotNull(message = "is required")
 	@Min(value=18, message="age must be atleast 18 to register")
 	@Max(value=24, message="age must be less than 24 to register")
-	private int age;
+	private Integer age;
 	
 	@Pattern(regexp = "^[0-9]{6}", message = "exactly 6 digits required")
 	private String pinCode;
@@ -33,10 +34,10 @@ public class Customer {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public int getAge() {
+	public Integer getAge() {
 		return age;
 	}
-	public void setAge(int age) {
+	public void setAge(Integer age) {
 		this.age = age;
 	}
 	public String getPinCode() {
