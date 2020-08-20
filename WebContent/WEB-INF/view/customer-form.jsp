@@ -23,6 +23,11 @@
 	<form:errors path="lastName" cssClass="error"/>
 	<br><br>
 	
+	Age &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<form:input path="age" />
+	<form:errors path="age" cssClass="error"/>
+	<br><br>
+	
 	<input type="submit" value="Submit">
 	
 </form:form>
