@@ -22,6 +22,9 @@ public class Customer {
 	@Pattern(regexp = "^[0-9]{6}", message = "exactly 6 digits required")
 	private String pinCode;
 	
+	@StartsWith(value="CT", message="must start with CT")
+	private String courseCode;
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -45,5 +48,11 @@ public class Customer {
 	}
 	public void setPinCode(String pinCode) {
 		this.pinCode = pinCode;
+	}
+	public String getCourseCode() {
+		return courseCode;
+	}
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
 	}
 }

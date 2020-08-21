@@ -6,5 +6,7 @@ Customer confirmed : ${customer.firstName} ${customer.lastName}
 Age : ${customer.age}
 <br><br>
 Pin Code : ${customer.pinCode}
+<br><br>
+Course Code : ${customer.courseCode}
 </body>
 </html>
